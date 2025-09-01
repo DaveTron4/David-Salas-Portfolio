@@ -18,12 +18,12 @@ function App() {
 
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="">
       {showSplash && <Splash onFinish={() => setShowSplash(false)} />}
       {!showSplash && (
         <>
           <Nav />
-          <main className="flex-grow p-4">
+          <main>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />

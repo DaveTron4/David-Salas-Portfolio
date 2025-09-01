@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+body {
+    background-color: #1b054e;
+}
+
+@layer components {
+  /* Custom styles for the navigation bar */
+  .nav-button-active {
+    @apply bg-gray-50/20 backdrop-blur-md text-white border-1 hover:shadow-[0_0_10px_2px_rgba(255,255,255,0.7)];
+  }
+
+  .nav-button-inactive {
+    @apply  hover:bg-gray-50/20 hover:backdrop-blur-md text-white hover:border-1 hover:shadow-[0_0_10px_2px_rgba(255,255,255,0.7)];
+  }
+
+  .nav-bar {
+    @apply fixed top-4 left-1/2 transform -translate-x-1/2 bg-white/30 backdrop-blur-md rounded-full px-3 py-2 flex space-x-4 z-50 outline-white/50 outline-1 shadow-inner shadow-gray-300/20;
+  }
+}

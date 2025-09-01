@@ -1,8 +1,14 @@
-import React from 'react'
+import Hero from '../components/home/Hero'
+import ProjectsComponent from '../components/home/ProjectsComponent'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+        <Hero />
+        <div className="h-20"></div>
+        <ProjectsComponent />
+    </div>
+
   )
 }
 
