@@ -1,0 +1,25 @@
+{
+  "experiences": [
+    {
+      "date": "May 2024 – Present",
+      "company": "TechCorp",
+      "position": "Software Engineering Intern",
+      "description": "Worked on building internal tools and APIs to improve data processing. Collaborated with a team of 5 engineers using Agile methodologies.",
+      "technologies": ["React", "Node.js", "PostgreSQL", "AWS"]
+    },
+    {
+      "date": "Jan 2023 – May 2024",
+      "company": "Freelance",
+      "position": "Full-Stack Developer",
+      "description": "Designed and developed custom websites for small businesses with a focus on SEO optimization and responsive design.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Flask", "SQL"]
+    },
+    {
+      "date": "Aug 2022 – Dec 2022",
+      "company": "Georgia State University",
+      "position": "Teaching Assistant",
+      "description": "Assisted students in understanding data structures and algorithms. Held weekly office hours and reviewed assignments.",
+      "technologies": ["Python", "Java"]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "skills": {
+    "Frontend": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "TailwindCSS",
+      "TypeScript",
+      "Bootstrap",
+      "Three.js"
+    ],
+    "Backend": [
+      "Python",
+      "Flask",
+      "Node.js",
+      "Express",
+      "REST APIs",
+      "Java",
+      "C",
+      "C++"
+    ],
+    "Databases": [
+      "SQL",
+      "MySQL",
+      "PostgreSQL",
+      "Supabase",
+      "DBeaver",
+      "MongoDB",
+      "SQLite",
+      "Mongoose",
+      "phpMyAdmin"
+    ],
+    "Tools": [
+      "Git/GitHub",
+      "Netlify",
+      "Postman",
+      "CI/CD",
+      "Docker",
+      "Power BI",
+      "Figma",
+      "Agile/Scrum",
+      "Vercel"
+    ]
+  }
+}

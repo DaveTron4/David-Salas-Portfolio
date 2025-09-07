@@ -5,19 +5,23 @@ import { motion } from "framer-motion";
 
 export default function ProjectSection() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [scrollDirection, setScrollDirection] = useState<"down" | "up">("down");
   const refs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
+    let lastIndex = 0;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const index = Number(entry.target.getAttribute("data-index"));
+            setScrollDirection(index > lastIndex ? "down" : "up");
             setActiveIndex(index);
+            lastIndex = index;
           }
         });
       },
-      { threshold: 1 } // adjust how much of the image must be visible
+      { threshold: 1 }
     );
 
     refs.current.forEach((ref) => ref && observer.observe(ref));
@@ -39,15 +43,18 @@ export default function ProjectSection() {
             className="h-[80vh] flex items-center justify-center"
           >
             <motion.img
-                src={project.image}
-                alt={project.title}
-                className="rounded-xl shadow-lg object-cover h-full"
-                initial={{ opacity: 0, x: 80 }}
-                animate={{
-                    opacity: activeIndex === i ? 1 : 0,
-                    x: activeIndex === i ? 0 : 80,
-                }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
+              src={project.image}
+              alt={project.title}
+              className="rounded-xl shadow-lg object-cover h-full"
+              initial={{ opacity: 0, x: 0, y: 0 }}
+              animate={
+                activeIndex === i
+                  ? { opacity: 1, x: 0, y: 0 }
+                  : scrollDirection === "down"
+                    ? { opacity: 0, x: 0, y: -80 }
+                    : { opacity: 0, x: 0, y: 80 }
+              }
+              transition={{ duration: 0.6, ease: "easeOut" }}
             />
           </div>
         ))}
@@ -55,13 +62,13 @@ export default function ProjectSection() {
 
       {/* Right Side - Sticky Info */}
       <div className="md:sticky md:top-20 flex flex-col justify-center h-[80vh]">
-        <h2 className="text-3xl font-bold">{projects[activeIndex].title}</h2>
-        <p className="mt-4 text-gray-600">{projects[activeIndex].longDesc}</p>
+        <h2 className="text-3xl font-bold text-white">{projects[activeIndex].title}</h2>
+        <p className="mt-4 text-gray-100">{projects[activeIndex].longDesc}</p>
         <div className="mt-6 flex flex-wrap gap-2">
           {projects[activeIndex].technologies.map((tech, i) => (
             <span
               key={i}
-              className="px-3 py-1 text-sm rounded-full bg-gray-200 dark:bg-gray-700"
+              className="px-3 py-1 text-sm rounded-full bg-gray-200 dark:bg-gray-700 text-white"
             >
               {tech}
             </span>
