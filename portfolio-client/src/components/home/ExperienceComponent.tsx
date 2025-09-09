@@ -1,4 +1,3 @@
-import React from 'react'
 import experience from "../../data/experiences.json";
 
 const ExperienceComponent = () => {
@@ -9,7 +8,7 @@ const ExperienceComponent = () => {
         {experience.experiences.map((exp, index) => (
           <div key={index} className="mb-10 ml-4">
             {/* Dot on the timeline */}
-            <div className="absolute -left-3.5 w-7 h-7 bg-indigo-500 rounded-full border-4 border-slate-900"></div>
+            <div className="absolute -left-4 w-7 h-7 bg-indigo-500 rounded-full border-4 border-slate-900"></div>
 
             <div className="bg-slate-800 p-6 rounded-xl shadow-md">
               <p className="text-sm text-gray-400">{exp.date}</p>

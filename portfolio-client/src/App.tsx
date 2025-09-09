@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 // Components
 import Splash from "./components/Splash";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 // Pages
 import Home from "./pages/Home";
@@ -31,6 +32,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
+          <Footer />
         </>
       )}
     </div>

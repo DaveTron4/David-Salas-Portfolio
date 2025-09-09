@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "QR Code Generator",
-    "shortDesc": "Generate vCard and link QR codes.",
+    "shortDesc": "Generate vCard and link QR codes",
     "longDesc": "A full-stack app with Flask backend and React frontend for generating custom QR codes with logos and styles.",
     "image": "/images/qrcode.png",
     "technologies": ["React", "Flask", "Python", "TailwindCSS"]
@@ -10,7 +10,7 @@
   {
     "id": "2",
     "title": "Minecraft Server Guide",
-    "shortDesc": "Step-by-step modded server setup.",
+    "shortDesc": "Step-by-step modded server setup",
     "longDesc": "A guide hosted on GitHub Pages that walks users through setting up a modded Minecraft server with Forge and Playit.gg.",
     "image": "/images/minecraft.png",
     "technologies": ["HTML", "CSS", "GitHub Pages"]
