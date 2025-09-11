@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="nav-bar">
       {/* Home button */}
       <button
-        className={`flex items-center gap-2 p-2 rounded-full ${isActive("/") ? "nav-button-active" : "nav-button-inactive"}`}
+        className={`${isActive("/") ? "nav-button-active" : "nav-button-inactive"}`}
         onClick={() => navigate("/")}
       >
         <Home className="w-4 h-4" />
@@ -21,7 +21,7 @@ export default function Navbar() {
 
       {/* About button */}
       <button
-        className={`flex items-center gap-2 p-2 rounded-full ${isActive("/about") ? "nav-button-active" : "nav-button-inactive"}`}
+        className={`${isActive("/about") ? "nav-button-active" : "nav-button-inactive"}`}
         onClick={() => navigate("/about")}
       >
         <User className="w-4 h-4" />
@@ -30,7 +30,7 @@ export default function Navbar() {
 
       {/* Projects Button */}
       <button
-        className={`flex items-center gap-2 p-2 rounded-full ${isActive("/projects") ? "nav-button-active" : "nav-button-inactive"}`}
+        className={`${isActive("/projects") ? "nav-button-active" : "nav-button-inactive"}`}
         onClick={() => navigate("/projects")}
       >
         <FileText className="w-4 h-4" />
@@ -39,7 +39,7 @@ export default function Navbar() {
 
       {/* Contact button */}
       <button
-        className={`flex items-center gap-2 p-2 rounded-full ${isActive("/contact") ? "nav-button-active" : "nav-button-inactive"}`}
+        className={`${isActive("/contact") ? "nav-button-active" : "nav-button-inactive"}`}
         onClick={() => navigate("/contact")}
       >
         <Mail className="w-4 h-4" />
