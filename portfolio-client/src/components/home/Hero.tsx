@@ -1,30 +1,25 @@
-import { Mail, FileText } from "lucide-react"; // icons
+import { Mail, FileText, Github, Linkedin, ArrowDown } from "lucide-react"; // icons
 import { motion } from "framer-motion";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
+import { Button } from "../../ui/Button";
 
 const Hero = () => {
   return (
-    <section
-      className="w-full h-screen flex items-center justify-center bg-slate-900 text-white
-                 px-6
-                 sm:px-8 
-                 md:px-16 
-                 lg:px-20"
-    >
-      <div
-        className="flex flex-col-reverse items-center h-full justify-center gap-10 mt-[50vh]
-                   sm:gap-0 sm:flex-col-reverse sm:items-center sm:justify-center sm:w-full sm:mt-0
-                   md:gap-0 md:flex-row md:items-center md:justify-center md:w-11/12
-                   lg:gap-12 lg:flex-row lg:items-center lg:justify-center lg:w-11/12"
-      >
-        {/* Left side */}
-        <div className="flex flex-col items-center space-y-4 h-full text-left
-                        sm:items-center sm:justify-center sm:w-1/2 sm:h-[40vh] sm:text-left
-                        md:items-start  md:w-1/2 md:text-left md:justify-center
-                        lg:justify-center lg:ml-30 lg:items-start lg:w-1/2 lg:text-left"
-        >
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+        {/* Background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary via-black/50 to-primary/50" />
+        
+        
+        {/* Animated background elements */}
+        <div className="absolute inset-0">
+            <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse delay-1000" />
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center">
 
-            <h3 className="text-base text-gray-200
+            {/* <h3 className="text-base text-gray-200
                            sm:text-lg 
                            md:text-2xl
                            lg:text-3xl"
@@ -39,99 +34,106 @@ const Hero = () => {
                     deleteSpeed: 50,
                 }}
                 />
-            </h3>
+            </h3> */}
+            
 
-            <h1 className="text-4xl font-bold
-                           sm:text-5xl 
-                           md:text-7xl
-                           lg:text-8xl"
-            >
-                David Salas C.
-            </h1>
-        
-            <h3 className="text-xl text-indigo-400
-                           sm:text-2xl 
-                           md:text-3xl
-                           lg:text-4xl"
-            >
-                Full Stack Developer
-            </h3>
-
-            {/* Buttons Div */}
-            <div className="flex space-x-4 mt-6
-                            md:justify-start
-                            lg:space-x-6"
-            >
-                {/* Primary button */}
-                <button className="px-6 py-3 rounded-full bg-sky-600 hover:bg-sky-800 transition
-                                text-white font-semibold
-                                sm:px-7 sm:py-3 sm:text-lg
-                                md:px-8 md:py-4 md:text-lg
-                                lg:px-10 lg:py-5 lg:text-xl"
-                >
-                    View Work
-                </button>
-
-                {/* Circle buttons */}
-                <button className="w-12 h-12 flex items-center justify-center rounded-full bg-green-500 hover:bg-green-600 transition
-                                   sm:w-12 sm:h-12
-                                   md:w-14 md:h-14
-                                   lg:w-16 lg:h-16"
-                >
-                    <Mail size={20} />
-                </button>
-                <button className="w-12 h-12 flex items-center justify-center rounded-full bg-purple-500 hover:bg-purple-600 transition
-                                   sm:w-12 sm:h-12
-                                   md:w-14 md:h-14
-                                   lg:w-16 lg:h-16"
-                >
-                    <FileText size={20} />
-                </button>
-            </div>
-        </div>
-
-        {/* Right side */}
-        <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            whileHover={{ scale: 1.05 }}
-            className="relative flex justify-center items-center mb-12
-                       sm:mb-0 sm:w-1/2 sm:
-                       md:w-1/2
-                       lg:w-1/3 lg: lg:h-auto lg:mr-30"
-        >
-
-            {/* Outline */}
             <motion.div
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-                // pulsing animation
-                whileHover={{ scale: 1.05 }}
-                
-                className="absolute w-64 h-64 bg-amber-300 rounded-full z-0
-                           sm:w-72 sm:h-72
-                           md:w-80 md:h-80 
-                           lg:w-[550px] lg:h-[550px]"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
             >
-
+                <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6">
+                    <span className="text-text-color">Hi, I'm </span>
+                    <span className="bg-gradient-to-r from-accent2 to-accent1 bg-clip-text text-transparent">
+                        David Salas C.
+                    </span>
+                </h1>
+            </motion.div>
+        
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+            >
+                <p className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-8 ">
+                    Full Stack Developer
+                </p>
             </motion.div>
 
-            {/* Image */}
-            <motion.img
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
-                src="/profile.jpg"
-                alt="profile"
-                className="relative z-10 object-cover rounded-full shadow-lg
-                           w-48 h-48
-                           sm:w-56 sm:h-56 
-                           md:w-72 md:h-72 
-                           lg:w-[450px] lg:h-[450px] lg:shadow-lg lg:shadow-black/30"
-            />
-        </motion.div>
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+            >
+                <p className="text-lg sm:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
+                I create exceptional digital experiences through clean code and innovative solutions. 
+                Passionate about building scalable applications that make a difference.
+                </p>
+            </motion.div>
+
+
+            {/* Primary button */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
+            >
+                <Button
+                    // onClick={scrollToProjects}
+                    size="lg"
+                    className="glass hover:bg-primary/20 border-primary/30 px-8 py-3"
+                >
+                    View My Work
+                </Button>
+                <Button
+                    // onClick={scrollToContact}
+                    variant="outline"
+                    size="lg"
+                    className="glass hover:bg-accent/20 border-accent/30 px-8 py-3"
+                >
+                    Get In Touch
+                </Button>
+            </motion.div>
+
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="flex justify-center space-x-6 mb-16"
+            >
+                <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass p-3 rounded-full hover:bg-primary/20 transition-colors duration-200"
+                >
+                <Github size={24} />
+                </a>
+                <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass p-3 rounded-full hover:bg-primary/20 transition-colors duration-200"
+                >
+                <Linkedin size={24} />
+                </a>
+                <a
+                href="mailto:hello@example.com"
+                className="glass p-3 rounded-full hover:bg-primary/20 transition-colors duration-200"
+                >
+                <Mail size={24} />
+                </a>
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 1 }}
+                className="animate-bounce"
+            >
+                <ArrowDown size={32} className="text-muted-foreground mx-auto" />
+            </motion.div>
+        </div>
       </div>
     </section>
   );

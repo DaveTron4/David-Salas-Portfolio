@@ -7,16 +7,15 @@ import SkillsComponent from '../components/home/SkillsComponent'
 const Home = () => {
   return (
     <div>
-        <Hero />
-        <div className="h-20"></div>
-        <ProjectsComponent />
-        <div className="h-20"></div>
-        <AboutComponent />
-        <div className="h-20"></div>
-        <SkillsComponent />
-        <div className="h-20"></div>
-        <ExperienceComponent />
-        <div className="h-20"></div>
+        <div className="fixed inset-0 z-10">
+          <Hero />
+        </div>
+        <div className="relative z-20">
+          <AboutComponent />
+          <ProjectsComponent />
+          <SkillsComponent />
+          <ExperienceComponent />
+        </div>
     </div>
 
   )

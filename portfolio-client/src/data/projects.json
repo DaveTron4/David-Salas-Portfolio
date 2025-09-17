@@ -5,7 +5,11 @@
     "shortDesc": "Generate vCard and link QR codes",
     "longDesc": "A full-stack app with Flask backend and React frontend for generating custom QR codes with logos and styles.",
     "image": "/images/qrcode.png",
-    "technologies": ["React", "Flask", "Python", "TailwindCSS"]
+    "technologies": ["React", "Flask", "Python", "TailwindCSS"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com",
+    "challenge": "Building real-time data visualization that could handle large datasets without performance issues.",
+    "solution": "Implemented efficient data streaming with WebSockets and optimized rendering using virtual scrolling."
   },
   {
     "id": "2",
@@ -13,6 +17,10 @@
     "shortDesc": "Step-by-step modded server setup",
     "longDesc": "A guide hosted on GitHub Pages that walks users through setting up a modded Minecraft server with Forge and Playit.gg.",
     "image": "/images/minecraft.png",
-    "technologies": ["HTML", "CSS", "GitHub Pages"]
+    "technologies": ["HTML", "CSS", "GitHub Pages"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com",
+    "challenge": "Building real-time data visualization that could handle large datasets without performance issues.",
+    "solution": "Implemented efficient data streaming with WebSockets and optimized rendering using virtual scrolling."
   }
 ]

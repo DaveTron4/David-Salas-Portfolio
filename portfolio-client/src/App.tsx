@@ -1,5 +1,5 @@
 // src/App.tsx
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 // Components
@@ -17,13 +17,19 @@ import Contact from "./pages/Contact";
 function App() {
   const [showSplash, setShowSplash] = useState(true);
 
+  useEffect(() => {
+    // Set dark mode by default
+    document.documentElement.classList.add('dark');
+  }, []);
+
 
   return (
-    <div className="">
+    <div className="min-h-screen bg-background text-foreground">
       {showSplash && <Splash onFinish={() => setShowSplash(false)} />}
       {!showSplash && (
         <>
           <Nav />
+          <div className="h-screen"></div>
           <main>
             <Routes>
               <Route path="/" element={<Home />} />

@@ -9,7 +9,7 @@ export default function Navbar() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="nav-bar">
+    <nav className="glass-nav">
       {/* Home button */}
       <button
         className={`${isActive("/") ? "nav-button-active" : "nav-button-inactive"}`}
