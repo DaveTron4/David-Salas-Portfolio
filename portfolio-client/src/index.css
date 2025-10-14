@@ -206,7 +206,15 @@ html {
   }
   
   .glass-nav {
-    @apply backdrop-blur-xl bg-black/20 border-b border-white/10 fixed top-0 left-0 w-full flex justify-center py-2 z-50;
+    @apply backdrop-blur-xl bg-black/20 border-b border-white/10 fixed top-0 left-0 w-full flex justify-center py-5 z-50;
+  }
+
+  .nav-button-active {
+    @apply flex items-center gap-2 px-4 py-2 rounded-full bg-gray-500/30 backdrop-blur-md text-white border-[0.1px] hover:shadow-[0_0_10px_0px_rgba(255,255,255,0.7)];
+  }
+
+  .nav-button-inactive {
+    @apply flex items-center gap-2 px-4 py-2 rounded-full hover:bg-gray-500/30 hover:backdrop-blur-md text-white hover:border-[0.1px] hover:shadow-[0_0_10px_0px_rgba(255,255,255,0.7)];
   }
 
   /* Sliding card effect */
@@ -223,28 +231,7 @@ html {
     right: 0;
     height: 2px;
   }
-}
 
-/* Skill scroll animations */
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes scroll-right {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@layer utilities {
   .animate-scroll-left {
     animation: scroll-left 30s linear infinite;
   }
@@ -256,44 +243,23 @@ html {
   .hover\:pause-animation:hover {
     animation-play-state: paused;
   }
-}
-/* body {
-    background-color: #1b054e;
-}
 
-@layer components {
-  .nav-button-active {
-    @apply flex items-center gap-2 p-2 rounded-full  bg-gray-500/30 backdrop-blur-md text-white border-[0.1px] hover:shadow-[0_0_10px_0px_rgba(255,255,255,0.7)]
-             md:w-[80px] md:justify-center
-             lg:w-[100px] lg:justify-center; 
-  }
-
-  .nav-button-inactive {
-    @apply  flex items-center gap-2 p-2 rounded-full  hover:bg-gray-500/30 hover:backdrop-blur-md text-white hover:border-[0.1px] hover:shadow-[0_0_10px_0px_rgba(255,255,255,0.7)]
-              md:w-[80px] md:justify-center
-              lg:w-[100px] lg:justify-center ;
-  }
-
-  .nav-bar {
-    @apply fixed top-4 left-1/2 transform -translate-x-1/2 bg-gray-500/30 backdrop-blur-md rounded-full px-3 py-2 flex space-x-4 z-50 outline-white/50 outline-1 shadow-[inset_0_0_50px_rgba(255,255,255,.3),0_5px_20px_rgba(0,0,0,0.3)]
-            md:px-4 md:py-2 md:space-x-6 md:w-[60vw] md:justify-center   
-            lg:px-6 lg:py-3 lg:space-x-6 lg:w-[30vw] lg:justify-around lg:overflow-hidden;
-  }
 }
 
 @keyframes infinite-scroll {
-  0% {
-    transform: translateX(var(--start, 0));
-  }
-  100% {
-    transform: translateX(var(--end, -50%));
-  }
+from {
+  transform: translateX(var(--start));
 }
+to {
+  transform: translateX(var(--end));
+}
+  }
 
 .infinite-scroll {
-  animation: infinite-scroll var(--duration, 20s) linear infinite;
-} 
+  will-change: transform;
+  animation: infinite-scroll var(--duration) linear infinite;
+}
 
 .infinite-scroll:hover {
   animation-play-state: paused;
-} */
+}

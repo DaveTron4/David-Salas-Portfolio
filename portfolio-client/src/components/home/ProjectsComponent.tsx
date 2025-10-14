@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect } from "react";
 import projects from "../../data/projects.json";
 import { motion } from "framer-motion";
-import { ArrowUpRight, ExternalLink, Github } from "lucide-react";
+import {ExternalLink, Github } from "lucide-react";
 import { Button } from "../../ui/Button";
 
 export default function ProjectSection() {
@@ -213,52 +213,22 @@ export default function ProjectSection() {
                   refs.current[i] = el;
                 }}
                 data-index={i}
-                className="h-[80vh] flex flex-col justify-end items-center 
-                  bg-gradient-to-br from-indigo-900 via-purple-900 to-violet-700 
-                  rounded-xl relative border-5 border-gray-800 overflow-hidden
-                  shadow-[inset_0_0_30px_rgba(255,255,255,.2),0_0_100px_rgba(0,0,0,0.5)]"
               >
-                <motion.p className="absolute top-5 text-3xl text-white text-center bg-gray-900/50 px-10 py-3 rounded-full
-                  backdrop-blur-md border-[0.1px] border-white/50
-                  shadow-[inset_0_0_50px_rgba(255,255,255,.3),0_5px_20px_rgba(0,0,0,0.3)]"
-                  initial={{ opacity: 0, y: 0, scale: 0.8 }}
-                  animate={activeIndex === i ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 0, scale: 0.8 }}
-                  transition={{ type: "spring", stiffness: 200, damping: 20, duration: 0.5 }}
-                  >
-                  {project.shortDesc}
-                </motion.p>
-                <motion.div className="w-full h-[80%] flex items-center justify-center
-                  bg-gradient-to-b from-transparent to-black/70">
+                <motion.div className="relative glass-card p-4 rounded-2xl"
+                    initial={{ opacity: 0}}
+                    animate={{opacity: activeIndex === i ? 1 : 0}}
+                    transition={{ duration: 0.3, ease: "easeOut" }}>
                   <motion.img
                     src={project.image}
                     alt={project.title}
                     // image fits half the container height
-                    className="rounded-t-xl object-contfain h-full 
-                      border-[0.1px] border-b-0 border-white/50 
-                      shadow-[0_0_50px_rgba(30,144,255,0.3)]"
-                    initial={{ opacity: 0, x: 0, y: 0 }}
-                    animate={
-                      activeIndex === i
-                        ? { opacity: 1, x: 0, y: 0 }
-                        : {opacity: 0, x: 0, y: 80}
-                    }
-                    whileHover={{ scale: 1.05 , rotate: 2, translateY: 5}}
+                    className="rounded-xl"
+                    initial={{ opacity: 0}}
+                    animate={{opacity: activeIndex === i ? 1 : 0}}
+                    whileHover={{ scale: .9, translateY: 5}}
                     transition={{ duration: 0.3, ease: "easeOut" }}
                   />
                 </motion.div>
-
-                <motion.button
-                  className="absolute bottom-5 right-5 text-white rounded-full w-12 h-12 flex items-center justify-center
-                  backdrop-blur-md border-[0.1px] border-white/50
-                  shadow-[inset_0_0_50px_rgba(255,255,255,.3),0_0_50px_rgba(30,144,255,0.3)]"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={activeIndex === i ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-                  transition={{ type: "spring", stiffness: 200, damping: 20, duration: 0.3 }}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <ArrowUpRight size={20} />
-                </motion.button>
               </div>
             ))}
           </div>
