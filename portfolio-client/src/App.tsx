@@ -24,7 +24,7 @@ function App() {
 
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen text-foreground">
       {showSplash && <Splash onFinish={() => setShowSplash(false)} />}
       {!showSplash && (
         <>

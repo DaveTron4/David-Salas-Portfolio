@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="w-full  py-10 flex justify-center z-50 relative">
+    <footer id="contact" className="w-full  py-10 flex justify-center z-50 relative ">
       <div className="glass-card rounded-2xl shadow-lg p-8 max-w-4xl w-full text-center text-gray-300">
         {/* Title */}
         <h2 className="text-2xl font-semibold text-white mb-6">Let’s Connect</h2>

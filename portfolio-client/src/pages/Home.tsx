@@ -10,7 +10,7 @@ const Home = () => {
         <div className="fixed inset-0 z-10">
           <Hero />
         </div>
-        <div className="relative z-20">
+        <div className="section-card relative z-20">
           <AboutComponent />
           <ProjectsComponent />
           <SkillsComponent />

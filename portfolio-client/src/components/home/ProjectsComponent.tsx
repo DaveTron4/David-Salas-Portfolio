@@ -170,7 +170,7 @@ export default function ProjectSection() {
               className="glass hover:bg-primary/20 border-primary/30"
             >
               <a
-                href="https://github.com"
+                href="https://github.com/DaveTron4"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -324,6 +324,30 @@ export default function ProjectSection() {
               </motion.div>
             </div>
         </div>
+        {/* All Projects Link */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="glass hover:bg-primary/20 border-primary/30"
+          >
+            <a
+              href="https://github.com/DaveTron4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github className="w-5 h-5 mr-2" />
+              View All Projects on GitHub
+            </a>
+          </Button>
+        </motion.div>
       </div>
     </section>
   );

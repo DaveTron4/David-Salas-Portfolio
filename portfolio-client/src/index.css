@@ -219,7 +219,7 @@ html {
 
   /* Sliding card effect */
   .section-card {
-    @apply bg-background rounded-t-3xl relative border-t-2;
+    @apply bg-background rounded-3xl relative border-t-2 border-b-2;
     box-shadow: 0 -20px 50px rgba(0, 0, 0, 0.3), 0 -10px 25px rgba(0, 0, 0, 0.2);
   }
 

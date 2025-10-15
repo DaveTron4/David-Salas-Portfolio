@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import { Code2, Rocket } from "lucide-react";
 
 const AboutComponent = () => {
   return (
-    <section id="about" className="section-card py-20 relative">
+    <section id="about" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +30,7 @@ const AboutComponent = () => {
           >
             <div className="relative glass-card p-4 rounded-2xl">
               <img
-                src="../../../public/profile.jpg"
+                src="/profile.jpg"
                 alt="Alex Smith - Full Stack Developer"
                 className="w-full h-96 lg:h-[500px] object-cover rounded-xl"
               />

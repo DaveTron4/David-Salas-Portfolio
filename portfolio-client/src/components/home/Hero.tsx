@@ -1,42 +1,52 @@
 import { Mail, FileText, Github, Linkedin, ArrowDown } from "lucide-react"; // icons
 import { motion } from "framer-motion";
 // import Typewriter from "typewriter-effect";
+import { useEffect, useState } from "react";
 import { Button } from "../../ui/Button";
 
 const Hero = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    // --- Scroll Detection Logic ---
+    useEffect(() => {
+        const handleScroll = () => {
+        // Set state to true if user has scrolled more than 50px, else false
+        setIsScrolled(window.scrollY > 50);
+        };
+
+        // Add event listener for scroll
+        window.addEventListener("scroll", handleScroll);
+
+        // Cleanup listener on component unmount
+        return () => {
+        window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const scrollToSection = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-        {/* Background gradient */}
+        {/* Background gradient & elements */}
         <div className="absolute inset-0 bg-gradient-to-br from-secondary via-black/50 to-primary/50" />
-        
-        
-        {/* Animated background elements */}
         <div className="absolute inset-0">
             <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse delay-1000" />
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="text-center">
-
-            {/* <h3 className="text-base text-gray-200
-                           sm:text-lg 
-                           md:text-2xl
-                           lg:text-3xl"
-            >
-                <Typewriter
-                options={{
-                    strings: ["Hi, my name is"],
-                    autoStart: true,
-                    loop: true,
-                    cursor: "|",
-                    delay: 75,
-                    deleteSpeed: 50,
-                }}
-                />
-            </h3> */}
-            
-
+          {/* --- This is the new animated container --- */}
+          {/* It wraps all the content and controls the fade-out effect */}
+          <motion.div
+            className="text-center"
+            animate={{ opacity: isScrolled ? 0 : 1, y: isScrolled ? -20 : 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -80,17 +90,17 @@ const Hero = () => {
                 className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
             >
                 <Button
-                    // onClick={scrollToProjects}
+                    onClick={() => scrollToSection("projects")}
                     size="lg"
-                    className="glass hover:bg-primary/20 border-primary/30 px-8 py-3"
+                    className="glass hover:bg-primary/20 border-primary/30 px-8 py-3 rounded-full text-white"
                 >
                     View My Work
                 </Button>
                 <Button
-                    // onClick={scrollToContact}
+                    onClick={() => scrollToSection("contact")}
                     variant="outline"
                     size="lg"
-                    className="glass hover:bg-accent/20 border-accent/30 px-8 py-3"
+                    className="glass hover:bg-accent1/20 border-accent1/30 px-8 py-3 rounded-full text-white"
                 >
                     Get In Touch
                 </Button>
@@ -103,26 +113,26 @@ const Hero = () => {
                 className="flex justify-center space-x-6 mb-16"
             >
                 <a
-                href="https://github.com"
+                href="https://github.com/DaveTron4"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass p-3 rounded-full hover:bg-primary/20 transition-colors duration-200"
                 >
-                <Github size={24} />
+                <Github size={24} className="text-white"/>
                 </a>
                 <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/david-salas-carrascal/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass p-3 rounded-full hover:bg-primary/20 transition-colors duration-200"
                 >
-                <Linkedin size={24} />
+                <Linkedin size={24} className="text-white"/>
                 </a>
                 <a
-                href="mailto:hello@example.com"
+                href="mailto:davidtnt970@gmail.com"
                 className="glass p-3 rounded-full hover:bg-primary/20 transition-colors duration-200"
                 >
-                <Mail size={24} />
+                <Mail size={24} className="text-white"/>
                 </a>
             </motion.div>
             <motion.div
@@ -133,8 +143,8 @@ const Hero = () => {
             >
                 <ArrowDown size={32} className="text-muted-foreground mx-auto" />
             </motion.div>
+          </motion.div>
         </div>
-      </div>
     </section>
   );
 };
