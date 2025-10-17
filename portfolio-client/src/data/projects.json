@@ -1,26 +1,83 @@
 [
   {
     "id": "1",
-    "title": "QR Code Generator",
-    "shortDesc": "Generate vCard and link QR codes",
-    "longDesc": "A full-stack app with Flask backend and React frontend for generating custom QR codes with logos and styles.",
+    "title": "QR Code Generator Web App",
+    "shortDesc": "Generate QR codes for vCards, URLs, Wi-Fi, and more.",
+    "longDesc": "A web application that allows users to generate QR codes for different types of data including vCards, URLs, Wi-Fi credentials, and more. Built with Flask and Python libraries for QR code generation, the app features multi-step forms, session management, and is ready for cloud deployment. Users can create QR codes for contact info, links, Wi-Fi, and calendar events, with options for logos and custom shapes. Designed for simplicity, speed, and responsive UX.",
     "image": "/images/qrcode.png",
-    "technologies": ["React", "Flask", "Python", "TailwindCSS"],
-    "liveUrl": "https://example.com",
-    "githubUrl": "https://github.com",
-    "challenge": "Building real-time data visualization that could handle large datasets without performance issues.",
-    "solution": "Implemented efficient data streaming with WebSockets and optimized rendering using virtual scrolling."
+    "technologies": [
+      "Python",
+      "Flask",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "qrcode",
+      "Pillow",
+      "Jinja2",
+      "Render"
+    ],
+    "liveUrl": "https://qr-code-yuwx.onrender.com/",
+    "githubUrl": "https://github.com/DaveTron4/QR_Code",
+    "challenge": "Learning Flask and QR code generation, managing user input and dynamic routing, and handling time management for a multi-feature app.",
+    "solution": "Researched Flask and QR code libraries, leveraged AI tools for development, and implemented robust session and error handling to deliver a full-featured, user-friendly app."
   },
   {
     "id": "2",
     "title": "Minecraft Server Guide",
-    "shortDesc": "Step-by-step modded server setup",
-    "longDesc": "A guide hosted on GitHub Pages that walks users through setting up a modded Minecraft server with Forge and Playit.gg.",
+    "shortDesc": "Step-by-step guide to deploy a modded Minecraft Forge server on Ubuntu Server.",
+    "longDesc": "Comprehensive guide showing how to install and configure a headless Ubuntu Server for a modded Minecraft (Forge) server. I created a bootable USB installer, completed a minimal Ubuntu Server install, configured Wi‑Fi using Netplan, and installed OpenJDK 17 required by Minecraft 1.18.2. I set up a dedicated server directory (/opt/minecraft), downloaded and installed the Forge server installer, ran the server to generate files, accepted the EULA, and created the mods folder. I transferred mods securely via SCP/WinSCP and handled permission changes with sudo. To keep the server running I used screen to run the server in the background and tuned JVM args (Xms/Xmx) for RAM allocation. When NAT/port‑forwarding was not available I used Playit.gg to expose the server securely. I also documented common admin tasks (changing seed, MOTD, server icon) and best practices for backups and resource allocation.",
     "image": "/images/minecraft.png",
-    "technologies": ["HTML", "CSS", "GitHub Pages"],
-    "liveUrl": "https://example.com",
-    "githubUrl": "https://github.com",
-    "challenge": "Building real-time data visualization that could handle large datasets without performance issues.",
-    "solution": "Implemented efficient data streaming with WebSockets and optimized rendering using virtual scrolling."
+    "technologies": [
+      "Ubuntu Server",
+      "Bash",
+      "SCP / WinSCP",
+      "Netplan"
+    ],
+    "liveUrl": "https://davetron4.github.io/Minecraft-Server-Guide/",
+    "githubUrl": "https://github.com/DaveTron4/Minecraft-Server-Guide",
+    "challenge": "Headless server setup, networking (NAT/port forwarding), mod compatibility and permissions when moving files into protected system directories.",
+    "solution": "Provided clear, tested steps: Netplan Wi‑Fi config, OpenJDK 17 install, Forge installation, secure file transfer and permission fixes, screen for background execution, JVM memory tuning, and Playit.gg tunneling when router forwarding wasn't possible — enabling reliable, maintainable server hosting."
+  },
+  {
+    "id": "3",
+    "title": "The Spotter Zone",
+    "shortDesc": "Responsive SPA with authentication and real-time data.",
+    "longDesc": "Built a responsive single-page application using React that supports client routing with React Router and state management through hooks. Integrated Supabase Auth for secure authentication and a PostgreSQL backend for real-time data storage and querying. Styled with Bootstrap for a mobile-first, accessible UI and deployed the frontend with CI/CD on Netlify.",
+    "image": "/images/spotter-zone.png",
+    "technologies": [
+      "React",
+      "Supabase",
+      "PostgreSQL",
+      "Bootstrap",
+      "Vite",
+      "Netlify",
+      "JavaScript"
+    ],
+    "liveUrl": "https://thespotterzone.netlify.app/",
+    "githubUrl": "https://github.com/DaveTron4/The-Spotter-Zone",
+    "challenge": "Learning Supabase integration and ensuring secure auth flows while delivering a responsive SPA under tight timelines.",
+    "solution": "Implemented Supabase Auth and real-time queries, used Bootstrap for consistent responsive UI, and configured Netlify CI/CD to streamline deployments and reduce release time."
+  },
+  {
+    "id": "4",
+    "title": "Employee Management System",
+    "shortDesc": "Full-stack employee CRUD with Java API and React frontend.",
+    "longDesc": "Led a team to develop an Employee Management System combining a responsive React frontend optimized with Vite and a Java Spring Boot RESTful API backed by a MySQL database. Designed the database schema and validated queries using DBeaver, applied clean architecture principles, and maintained version control with Git/GitHub to produce a maintainable, enterprise-ready application.",
+    "image": "/images/employee-management.png",
+    "technologies": [
+      "React",
+      "Bootstrap",
+      "Vite",
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "DBeaver",
+      "Git",
+      "GitHub"
+    ],
+    "liveUrl": "",
+    "githubUrl": "https://github.com/DaveTron4/employee-management-system",
+    "challenge": "Coordinating a team, designing a scalable schema, and integrating a REST API under time constraints.",
+    "solution": "Led iterative design and code reviews, used DBeaver for schema validation, and enforced clean architecture and Git workflows to deliver a stable, well-documented system."
   }
 ]

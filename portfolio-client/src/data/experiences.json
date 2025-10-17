@@ -1,25 +1,18 @@
 {
   "experiences": [
     {
-      "date": "May 2024 – Present",
-      "company": "TechCorp",
-      "position": "Software Engineering Intern",
-      "description": "Worked on building internal tools and APIs to improve data processing. Collaborated with a team of 5 engineers using Agile methodologies.",
-      "technologies": ["React", "Node.js", "PostgreSQL", "AWS"]
+      "date": "Jun 2024 – Oct 2024",
+      "company": "Elys BMG",
+      "position": "Support Technician Intern",
+      "description": "Monitored 50 client systems to ensure optimal functionality and prevent downtime. Managed help desk operations and created 10 error resolution guides to improve troubleshooting workflows. Fixed 50+ client system issues and provided technical support and troubleshooting system problems.",
+      "technologies": ["Tech Support"]
     },
     {
-      "date": "Jan 2023 – May 2024",
-      "company": "Freelance",
-      "position": "Full-Stack Developer",
-      "description": "Designed and developed custom websites for small businesses with a focus on SEO optimization and responsive design.",
-      "technologies": ["HTML", "CSS", "JavaScript", "Flask", "SQL"]
-    },
-    {
-      "date": "Aug 2022 – Dec 2022",
-      "company": "Georgia State University",
-      "position": "Teaching Assistant",
-      "description": "Assisted students in understanding data structures and algorithms. Held weekly office hours and reviewed assignments.",
-      "technologies": ["Python", "Java"]
+      "date": "Aug 2025 – Present",
+      "company": "CodePath",
+      "position": "Tech Fellow",
+      "description": "Mentored and supported a cohort of 7 students through weekly 1:1 check-ins, addressing project challenges and ensuring progress with course materials. Facilitated workshops, in-class activities, and icebreakers to foster an engaging and collaborative learning environment. Represented CodePath at Georgia State University events, increasing program visibility and driving student enrollment. Collaborated with CodePath staff and fellow Tech Fellows to improve the student experience through feedback loops and curriculum enhancements.",
+      "technologies": ["HTML", "CSS", "JavaScript"]
     }
   ]
 }
