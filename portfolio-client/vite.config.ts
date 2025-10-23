@@ -14,5 +14,9 @@ export default defineConfig({
     watch: { 
       usePolling: true 
     },
+    allowedHosts: [
+      'davidsalascarrascal.dev',
+      'localhost',
+    ]
   },
 })
