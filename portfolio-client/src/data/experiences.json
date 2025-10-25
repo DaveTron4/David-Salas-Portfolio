@@ -1,11 +1,25 @@
 {
   "experiences": [
     {
+      "date": "Sep 2022 – Present",
+      "company": "Freelance",
+      "position": "Web Developer",
+      "description": "Completed 5 websites for small businesses, increasing online visibility by 30%. Set up optimized SEO strategies and enabled email subscription systems to enhance client outreach. Delivered custom solutions using WordPress and Squarespace alongside traditional web technologies.",
+      "technologies": ["HTML", "CSS", "JavaScript", "WordPress", "Squarespace", "SEO"]
+    },
+    {
       "date": "Jun 2024 – Oct 2024",
       "company": "Elys BMG",
       "position": "Support Technician Intern",
       "description": "Monitored 50 client systems to ensure optimal functionality and prevent downtime. Managed help desk operations and created 10 error resolution guides to improve troubleshooting workflows. Fixed 50+ client system issues and provided technical support and troubleshooting system problems.",
-      "technologies": ["Tech Support"]
+      "technologies": ["TeamViewer", "Slack", "Jira", "Zendesk", "Windows Server"]
+    },
+    {
+      "date": "Aug 2024 – Present",
+      "company": "SHPE",
+      "position": "Software Development",
+      "description": "Built 12+ Arduino projects using C++ and Python to teach microcontroller concepts, increasing member retention by 25%. Led a team of 3 developers to launch the GSU SHPE chapter's online presence, securing $1,500 in sponsorships. Assisted 10+ members with Python assignments in Data Structures & Algorithms and System-Level Programming, achieving 90% average scores.",
+      "technologies": ["C++", "Python", "Arduino", "JSON-LD"]
     },
     {
       "date": "Aug 2025 – Present",
