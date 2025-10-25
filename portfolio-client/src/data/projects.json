@@ -14,9 +14,7 @@
       "RESTful API"
     ],
     "liveUrl": "",
-    "githubUrl": "https://github.com/DaveTron4/coffee-canvas",
-    "challenge": "Implementing complex frontend business logic for real-time price calculations and resolving critical API bugs including 404 errors and malformed SQL statements.",
-    "solution": "Debugged Express.js controllers, corrected INSERT/UPDATE SQL queries, and built reusable data helper utilities to map database IDs to human-readable names for a seamless user experience."
+    "githubUrl": "https://github.com/DaveTron4/coffee-canvas"
   },
   {
     "id": "2",
@@ -34,9 +32,7 @@
       "Render"
     ],
     "liveUrl": "https://qr-code-yuwx.onrender.com/",
-    "githubUrl": "https://github.com/DaveTron4/QR_Code",
-    "challenge": "Optimizing QR code rendering time and managing user sessions to prevent data conflicts.",
-    "solution": "Refactored core processes into reusable Python functions, reducing backend logic by 50% and implementing per-session file management for better data isolation and automated cleanup."
+    "githubUrl": "https://github.com/DaveTron4/QR_Code"
   },
   {
     "id": "3",
@@ -53,9 +49,7 @@
       "Git"
     ],
     "liveUrl": "https://thespotterzone.netlify.app/",
-    "githubUrl": "https://github.com/DaveTron4/The-Spotter-Zone",
-    "challenge": "Learning Supabase integration and ensuring secure authentication flows while maintaining responsive design.",
-    "solution": "Implemented Supabase Auth for secure user management, used Bootstrap for consistent UI across devices, and configured Netlify CI/CD for streamlined deployments."
+    "githubUrl": "https://github.com/DaveTron4/The-Spotter-Zone"
   },
   {
     "id": "4",
@@ -74,9 +68,7 @@
       "Git"
     ],
     "liveUrl": "",
-    "githubUrl": "https://github.com/DaveTron4/employee-management-system",
-    "challenge": "Coordinating team development, designing a scalable database schema, and ensuring the API could handle high-volume concurrent requests.",
-    "solution": "Led iterative design reviews, used DBeaver for schema validation and query optimization, and enforced clean architecture to deliver a stable, enterprise-ready system."
+    "githubUrl": "https://github.com/DaveTron4/employee-management-system"
   },
   {
     "id": "5",
@@ -92,8 +84,6 @@
       "Java"
     ],
     "liveUrl": "https://davetron4.github.io/Minecraft-Server-Guide/",
-    "githubUrl": "https://github.com/DaveTron4/Minecraft-Server-Guide",
-    "challenge": "Headless server setup, networking configuration, mod compatibility, and managing file permissions in protected directories.",
-    "solution": "Documented clear, tested steps including Netplan Wi-Fi config, Forge installation, secure file transfer, JVM memory tuning, and Playit.gg tunneling for reliable server hosting."
+    "githubUrl": "https://github.com/DaveTron4/Minecraft-Server-Guide"
   }
 ]

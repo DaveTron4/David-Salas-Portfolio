@@ -33,13 +33,16 @@ export default function ProjectSection() {
           }
         });
       },
-      { threshold: 1 }
+      { 
+        threshold: 0,
+        rootMargin: "-20% 0px -20% 0px" // Trigger change when element is 20% into viewport
+      }
     );
 
     refs.current.forEach((ref) => ref && observer.observe(ref));
 
     return () => observer.disconnect();
-  }, []);
+  }, [isMobile]);
 
   // Mobile/Tablet Layout
   if (isMobile) {
@@ -213,16 +216,16 @@ export default function ProjectSection() {
                   refs.current[i] = el;
                 }}
                 data-index={i}
+                className="min-h-screen flex items-center"
               >
-                <motion.div className="relative glass-card p-4 rounded-2xl"
+                <motion.div className="relative glass-card p-4 rounded-2xl w-full"
                     initial={{ opacity: 0}}
                     animate={{opacity: activeIndex === i ? 1 : 0}}
                     transition={{ duration: 0.3, ease: "easeOut" }}>
                   <motion.img
                     src={project.image}
                     alt={project.title}
-                    // image fits half the container height
-                    className="rounded-xl"
+                    className="rounded-xl w-full aspect-square object-cover"
                     initial={{ opacity: 0}}
                     animate={{opacity: activeIndex === i ? 1 : 0}}
                     whileHover={{ scale: .9, translateY: 5}}
@@ -234,7 +237,7 @@ export default function ProjectSection() {
           </div>
 
           {/* Right Side - Sticky Info */}
-            <div className="lg:sticky lg:top-24 lg:h-fit">
+            <div className="lg:sticky lg:top-24 lg:h-fit lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto custom-scrollbar">
               <motion.div
                 key={activeIndex}
                 initial={{ opacity: 0, y: 20 }}
@@ -259,22 +262,6 @@ export default function ProjectSection() {
                 <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
                   {projects[activeIndex].longDesc}
                 </p>
-
-                {/* Challenge & Solution */}
-                <div className="space-y-6 mb-8">
-                  <div>
-                    <h4 className="text-lg font-semibold mb-2 text-accent2">Challenge</h4>
-                    <p className="text-muted-foreground">
-                      {projects[activeIndex].challenge}
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold mb-2 text-accent2">Solution</h4>
-                    <p className="text-muted-foreground">
-                      {projects[activeIndex].solution}
-                    </p>
-                  </div>
-                </div>
 
                 {/* Technologies */}
                 <div className="mb-8">
