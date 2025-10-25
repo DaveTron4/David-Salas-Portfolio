@@ -60,6 +60,9 @@ It is fully deployed on an **AWS EC2 instance**, containerized with **Docker**, 
 ## 🧑‍💻 Author
 
 David Salas C.
+
 Full Stack Developer | Cybersecurity Enthusiast | Web Designer
+
 📧 davidtnt970@gmail.com
+
 🌐 https://davidsalascarrascal.dev
