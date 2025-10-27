@@ -237,7 +237,7 @@ export default function ProjectSection() {
           </div>
 
           {/* Right Side - Sticky Info */}
-            <div className="lg:sticky lg:top-24">
+            <div className="lg:sticky lg:top-24 lg:self-start">
               {/* Outer container keeps rounded corners; inner content scrolls */}
               <div className="glass-card rounded-2xl overflow-hidden">
                 <div className="lg:max-h-[calc(100vh-8rem)] overflow-y-auto custom-scrollbar">
