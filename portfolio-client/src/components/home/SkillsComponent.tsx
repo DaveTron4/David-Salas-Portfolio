@@ -23,9 +23,9 @@ const SkillsComponent = () => {
         <div className="flex flex-col gap-8">
           {Object.entries(skillsData.skills).map(([category, skills], idx) => {
             const direction = idx % 2 === 0 ? "left" : "right";
-            const duration = 40; // Slower is generally smoother
+            const duration = 25; // Faster for mobile visibility
             
-            const adjustment = 10; // Half the gap (gap-5 -> 20px / 2 = 10px)
+            const adjustment = 8; // Adjusted for smaller gap
 
             const style =
               direction === "left"
@@ -39,15 +39,15 @@ const SkillsComponent = () => {
                     maskImage: 'linear-gradient(to right, transparent 0, black 5%, black 95%, transparent 100%)'
                 }}>
                   <ul
-                    className="flex items-center gap-5 infinite-scroll"
+                    className="flex items-center gap-4 infinite-scroll"
                     style={style as React.CSSProperties}
                   >
                     {[...skills, ...skills].map((skill, index) => (
                       <li
                         key={index}
-                        className="flex-shrink-0 w-44 h-12 flex items-center justify-center glass hover:bg-primary/20 border-primary/30 cursor-pointer rounded-full transition-colors duration-200"
+                        className="flex-shrink-0 w-28 sm:w-36 lg:w-44 h-10 sm:h-11 lg:h-12 flex items-center justify-center glass hover:bg-primary/20 border-primary/30 cursor-pointer rounded-full transition-colors duration-200"
                       >
-                        <span className="text-slate-300 font-medium">{skill}</span>
+                        <span className="text-slate-300 font-medium text-sm sm:text-base">{skill}</span>
                       </li>
                     ))}
                   </ul>
