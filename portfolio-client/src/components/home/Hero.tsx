@@ -1,6 +1,6 @@
 import { Mail, FileText, Github, Linkedin, ArrowDown } from "lucide-react"; // icons
 import { motion } from "framer-motion";
-// import Typewriter from "typewriter-effect";
+import Typewriter from "typewriter-effect";
 import { useEffect, useState } from "react";
 import { Button } from "../../ui/Button";
 
@@ -47,6 +47,31 @@ const Hero = () => {
             animate={{ opacity: isScrolled ? 0 : 1, y: isScrolled ? -20 : 0 }}
             transition={{ duration: 0.5 }}
           >
+
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+            >
+                <p className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-8">
+                    <Typewriter
+                        options={{
+                            strings: [
+                                'Full Stack Developer',
+                                'Software Engineer',
+                                'Cybersecurity Professional',
+                                'Frontend Developer',
+                                'Backend Developer'
+                            ],
+                            autoStart: true,
+                            loop: true,
+                            deleteSpeed: 50,
+                            delay: 80,
+                        }}
+                    />
+                </p>
+            </motion.div>
+
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -60,28 +85,6 @@ const Hero = () => {
                 </h1>
             </motion.div>
         
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-            >
-                <p className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-8 ">
-                    Full Stack Developer
-                </p>
-            </motion.div>
-
-            {/* <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-            >
-                <p className="text-lg sm:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-                Senior Computer Science student at Georgia State University specializing in full-stack development 
-                and cybersecurity. Building secure, scalable applications that make a real impact.
-                </p>
-            </motion.div> */}
-
-
             {/* Primary button */}
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
