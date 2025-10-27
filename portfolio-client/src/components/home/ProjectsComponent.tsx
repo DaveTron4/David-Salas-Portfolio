@@ -237,78 +237,83 @@ export default function ProjectSection() {
           </div>
 
           {/* Right Side - Sticky Info */}
-            <div className="lg:sticky lg:top-24 lg:h-fit lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto custom-scrollbar">
-              <motion.div
-                key={activeIndex}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="glass-card p-8 lg:p-12 h-fit"
-              >
-                {/* Project Number */}
-                <div className="flex items-center gap-4 mb-6">
-                  <span className="text-4xl font-bold bg-gradient-to-r from-accent2 to-accent1 bg-clip-text text-transparent">
-                    {String(activeIndex + 1).padStart(2, '0')}
-                  </span>
-                  <div className="h-px bg-gradient-to-r from-accent2 to-accent1 flex-1"></div>
-                </div>
-
-                {/* Project Title */}
-                <h3 className="text-3xl text-text-color lg:text-4xl font-bold mb-6">
-                  {projects[activeIndex].title}
-                </h3>
-
-                {/* Project Description */}
-                <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
-                  {projects[activeIndex].longDesc}
-                </p>
-
-                {/* Technologies */}
-                <div className="mb-8">
-                  <h4 className="text-lg font-semibold mb-4 text-accent2">Technologies Used</h4>
-                  <div className="flex flex-wrap gap-3">
-                    {projects[activeIndex].technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="glass px-4 py-2 rounded-full border-primary/30 hover:bg-primary/10 transition-colors duration-200 cursor-pointer"
-                      >
-                        {tech}
+            <div className="lg:sticky lg:top-24">
+              {/* Outer container keeps rounded corners; inner content scrolls */}
+              <div className="glass-card rounded-2xl overflow-hidden">
+                <div className="lg:max-h-[calc(100vh-8rem)] overflow-y-auto custom-scrollbar">
+                  <motion.div
+                    key={activeIndex}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="p-8 lg:p-12"
+                  >
+                    {/* Project Number */}
+                    <div className="flex items-center gap-4 mb-6">
+                      <span className="text-4xl font-bold bg-gradient-to-r from-accent2 to-accent1 bg-clip-text text-transparent">
+                        {String(activeIndex + 1).padStart(2, '0')}
                       </span>
-                    ))}
-                  </div>
-                </div>
+                      <div className="h-px bg-gradient-to-r from-accent2 to-accent1 flex-1"></div>
+                    </div>
 
-                {/* Action Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button
-                    asChild
-                    className="glass hover:bg-primary/20 border-primary/30 flex-1"
-                  >
-                    <a
-                      href={projects[activeIndex].liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
-                    </a>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    asChild
-                    className="glass flex-1"
-                  >
-                    <a
-                      href={projects[activeIndex].githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github className="w-4 h-4 mr-2" />
-                      Source Code
-                    </a>
-                  </Button>
+                    {/* Project Title */}
+                    <h3 className="text-3xl text-text-color lg:text-4xl font-bold mb-6">
+                      {projects[activeIndex].title}
+                    </h3>
+
+                    {/* Project Description */}
+                    <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
+                      {projects[activeIndex].longDesc}
+                    </p>
+
+                    {/* Technologies */}
+                    <div className="mb-8">
+                      <h4 className="text-lg font-semibold mb-4 text-accent2">Technologies Used</h4>
+                      <div className="flex flex-wrap gap-3">
+                        {projects[activeIndex].technologies.map((tech) => (
+                          <span
+                            key={tech}
+                            className="glass px-4 py-2 rounded-full border-primary/30 hover:bg-primary/10 transition-colors duration-200 cursor-pointer"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Action Buttons */}
+                    <div className="flex flex-col sm:flex-row gap-4">
+                      <Button
+                        asChild
+                        className="glass hover:bg-primary/20 border-primary/30 flex-1"
+                      >
+                        <a
+                          href={projects[activeIndex].liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="w-4 h-4 mr-2" />
+                          Live Demo
+                        </a>
+                      </Button>
+                      <Button
+                        variant="outline"
+                        asChild
+                        className="glass flex-1"
+                      >
+                        <a
+                          href={projects[activeIndex].githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="w-4 h-4 mr-2" />
+                          Source Code
+                        </a>
+                      </Button>
+                    </div>
+                  </motion.div>
                 </div>
-              </motion.div>
+              </div>
             </div>
         </div>
         {/* All Projects Link */}
