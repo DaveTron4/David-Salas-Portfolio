@@ -15,7 +15,7 @@ const AboutComponent = () => {
             About <span className="bg-gradient-to-r from-accent2 to-accent1 bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Passionate full stack developer with 5+ years of experience creating digital solutions
+            Senior Computer Science student building secure, scalable solutions
           </p>
         </motion.div>
 
@@ -31,7 +31,7 @@ const AboutComponent = () => {
             <div className="relative glass-card p-4 rounded-2xl">
               <img
                 src="/profile.jpg"
-                alt="Alex Smith - Full Stack Developer"
+                alt="David Salas Carrascal - Full-Stack Software Engineer"
                 className="w-full h-96 lg:h-[500px] object-cover rounded-xl"
               />
             </div>
@@ -45,37 +45,39 @@ const AboutComponent = () => {
             viewport={{ once: true }}
           >
             <div className="glass-card p-8">
-              <h3 className="text-2xl font-bold mb-6 text-text-color">My Story</h3>
+              <h3 className="text-2xl font-bold mb-6 text-text-color">My Journey</h3>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I started my journey in web development 5 years ago, driven by a passion for creating 
-                  digital experiences that solve real-world problems. What began as curiosity about how 
-                  websites work has evolved into a deep expertise in full stack development.
+                  As a senior Computer Science student at Georgia State University, I specialize in 
+                  full-stack development and cybersecurity. I'm passionate about transforming complex 
+                  challenges into elegant, secure software solutions that make a real impact.
                 </p>
                 <p>
-                  I specialise in modern JavaScript frameworks, cloud technologies, and database design. 
-                  My experience spans from startups to enterprise-level applications, always focusing on 
-                  user experience and performance optimization.
+                  Currently serving as a CodePath Tech Fellow, I mentor aspiring developers while 
+                  continuously expanding my expertise in cloud security and advanced penetration testing. 
+                  My experience spans from building responsive web applications to implementing secure 
+                  backend systems with modern frameworks.
                 </p>
                 <p>
-                  When I'm not coding, you'll find me exploring new technologies, contributing to open 
-                  source projects, or sharing knowledge with the developer community. I believe in 
-                  continuous learning and staying ahead of industry trends.
+                  I thrive on learning emerging technologies and contributing to projects that push 
+                  boundaries. Whether it's crafting user-centric interfaces or architecting scalable 
+                  databases, I'm driven by the goal of building the future of tech—one line of code 
+                  at a time.
                 </p>
               </div>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4 mt-8 pt-6 border-t border-white/10">
                 <div className="text-center">
-                  <div className="text-2xl font-bold bg-gradient-to-r from-accent2 to-accent1 bg-clip-text text-transparent">5+</div>
+                  <div className="text-2xl font-bold bg-gradient-to-r from-accent2 to-accent1 bg-clip-text text-transparent">4+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold bg-gradient-to-r from-accent2 to-accent1 bg-clip-text text-transparent">50+</div>
-                  <div className="text-sm text-muted-foreground">Projects Completed</div>
+                  <div className="text-2xl font-bold bg-gradient-to-r from-accent2 to-accent1 bg-clip-text text-transparent">15+</div>
+                  <div className="text-sm text-muted-foreground">Projects Built</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold bg-gradient-to-r from-accent2 to-accent1 bg-clip-text text-transparent">15+</div>
+                  <div className="text-2xl font-bold bg-gradient-to-r from-accent2 to-accent1 bg-clip-text text-transparent">20+</div>
                   <div className="text-sm text-muted-foreground">Technologies</div>
                 </div>
               </div>
