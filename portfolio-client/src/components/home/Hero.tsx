@@ -76,8 +76,8 @@ const Hero = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
             >
                 <p className="text-lg sm:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-                I create exceptional digital experiences through clean code and innovative solutions. 
-                Passionate about building scalable applications that make a difference.
+                Senior Computer Science student at Georgia State University specializing in full-stack development 
+                and cybersecurity. Building secure, scalable applications that make a real impact.
                 </p>
             </motion.div>
 
@@ -103,6 +103,21 @@ const Hero = () => {
                     className="glass hover:bg-accent1/20 border-accent1/30 px-8 py-3 rounded-full text-white"
                 >
                     Get In Touch
+                </Button>
+                <Button
+                    asChild
+                    variant="outline"
+                    size="lg"
+                    className="glass hover:bg-accent2/20 border-accent2/30 px-8 py-3 rounded-full text-white"
+                >
+                    <a
+                        href="/Full_Stack_Resume_David_Salas.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FileText size={20} className="mr-2" />
+                        Resume
+                    </a>
                 </Button>
             </motion.div>
 
