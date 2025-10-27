@@ -61,8 +61,7 @@ const AboutComponent = () => {
                 <p>
                   I thrive on learning emerging technologies and contributing to projects that push 
                   boundaries. Whether it's crafting user-centric interfaces or architecting scalable 
-                  databases, I'm driven by the goal of building the future of tech—one line of code 
-                  at a time.
+                  databases, I'm driven by the goal of learning and building impactful projects.
                 </p>
               </div>
 
