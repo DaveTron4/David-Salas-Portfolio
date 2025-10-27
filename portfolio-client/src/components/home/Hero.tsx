@@ -97,14 +97,6 @@ const Hero = () => {
                     View My Work
                 </Button>
                 <Button
-                    onClick={() => scrollToSection("contact")}
-                    variant="outline"
-                    size="lg"
-                    className="glass hover:bg-accent1/20 border-accent1/30 px-8 py-3 rounded-full text-white"
-                >
-                    Get In Touch
-                </Button>
-                <Button
                     asChild
                     variant="outline"
                     size="lg"
