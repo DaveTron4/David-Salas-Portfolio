@@ -105,7 +105,7 @@ const Hero = () => {
                     className="glass hover:bg-accent2/20 border-accent2/30 px-8 py-3 rounded-full text-white"
                 >
                     <a
-                        href="/Full_Stack_Resume_David_Salas.pdf"
+                        href="/Full_Stack_Software_Engineer_Resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
