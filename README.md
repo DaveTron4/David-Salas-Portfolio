@@ -1,7 +1,10 @@
 # 🌐 Personal Portfolio Website
 
-This is my **personal portfolio website**, built to showcase my projects, skills, and professional experience as a **Full Stack Developer**.  
+This is my **personal portfolio website**, built to showcase my projects, skills, and professional experience as a **Full Stack Developer**.
+
 It is fully deployed on an **AWS EC2 instance**, containerized with **Docker**, and uses **Nginx** as a reverse proxy for secure and efficient routing.
+
+Check out the website here: [My Portfolio](https://davidsalascarrascal.dev/)
 
 ---
 
