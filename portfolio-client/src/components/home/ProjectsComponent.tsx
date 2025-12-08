@@ -125,33 +125,37 @@ export default function ProjectSection() {
 
                   {/* Action Buttons */}
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <Button
-                      asChild
-                      className="glass hover:bg-primary/20 border-primary/30 flex-1"
-                    >
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    {project.liveUrl && (
+                      <Button
+                        asChild
+                        className="glass hover:bg-primary/20 border-primary/30 flex-1"
                       >
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Live Demo
-                      </a>
-                    </Button>
-                    <Button
-                      variant="outline"
-                      asChild
-                      className="glass hover:bg-accent/20 border-accent/30 flex-1"
-                    >
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="w-4 h-4 mr-2" />
+                          Live Demo
+                        </a>
+                      </Button>
+                    )}
+                    {project.githubUrl && (
+                      <Button
+                        variant="outline"
+                        asChild
+                        className="glass hover:bg-accent/20 border-accent/30 flex-1"
                       >
-                        <Github className="w-4 h-4 mr-2" />
-                        Source Code
-                      </a>
-                    </Button>
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="w-4 h-4 mr-2" />
+                          Source Code
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </div>
               </motion.div>
@@ -283,33 +287,37 @@ export default function ProjectSection() {
 
                     {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4">
-                      <Button
-                        asChild
-                        className="glass hover:bg-primary/20 border-primary/30 flex-1"
-                      >
-                        <a
-                          href={projects[activeIndex].liveUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                      {projects[activeIndex].liveUrl && (
+                        <Button
+                          asChild
+                          className="glass hover:bg-primary/20 border-primary/30 flex-1"
                         >
-                          <ExternalLink className="w-4 h-4 mr-2" />
-                          Live Demo
-                        </a>
-                      </Button>
-                      <Button
-                        variant="outline"
-                        asChild
-                        className="glass flex-1"
-                      >
-                        <a
-                          href={projects[activeIndex].githubUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          <a
+                            href={projects[activeIndex].liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink className="w-4 h-4 mr-2" />
+                            Live Demo
+                          </a>
+                        </Button>
+                      )}
+                      {projects[activeIndex].githubUrl && (
+                        <Button
+                          variant="outline"
+                          asChild
+                          className="glass flex-1"
                         >
-                          <Github className="w-4 h-4 mr-2" />
-                          Source Code
-                        </a>
-                      </Button>
+                          <a
+                            href={projects[activeIndex].githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Github className="w-4 h-4 mr-2" />
+                            Source Code
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </motion.div>
                 </div>

@@ -85,5 +85,55 @@
     ],
     "liveUrl": "https://davetron4.github.io/Minecraft-Server-Guide/",
     "githubUrl": "https://github.com/DaveTron4/Minecraft-Server-Guide"
+  },
+  {
+    "id": "6",
+    "title": "Room To Grow",
+    "shortDesc": "AI tutoring platform using multi-model routing, CV, and streaming responses.",
+    "longDesc": "Full-stack hackathon project that integrates OpenRouter to orchestrate six+ LLMs (including Gemini and Claude) for dynamic model switching. Chat context is parsed into structured JSON to auto-generate flashcards and quizzes, while computer vision pipelines analyze uploaded diagrams. React 19 + Framer Motion power the UI, with real-time streaming responses to keep tutoring interactive.",
+    "image": "/images/room-to-grow.png",
+    "technologies": [
+      "React 19",
+      "TypeScript",
+      "Node.js",
+      "MongoDB",
+      "OpenRouter",
+      "Framer Motion"
+    ],
+    "liveUrl": "https://www.roomtogrow.fit",
+    "githubUrl": "https://github.com/DaveTron4/room-to-grow"
+  },
+  {
+    "id": "7",
+    "title": "TaskMate AI",
+    "shortDesc": "AI-powered task planner with GitHub OAuth and drag-and-drop prioritization.",
+    "longDesc": "Productivity app that uses OpenAI's API to convert natural language inputs into structured tasks, reaching 95% intent recognition accuracy. Built with React and Express.js on PostgreSQL (Render) with tuned indexing that cut query latency by 40%. Features GitHub OAuth for secure auth plus drag-and-drop prioritization that increased task completion by 25%.",
+    "image": "/images/taskmate-ai.png",
+    "technologies": [
+      "React",
+      "Express.js",
+      "PostgreSQL",
+      "OpenAI API",
+      "GitHub OAuth"
+    ],
+    "liveUrl": "https://taskmate-ai-ef8u.onrender.com/",
+    "githubUrl": "https://github.com/DaveTron4/taskmate-ai"
+  },
+  {
+    "id": "8",
+    "title": "FanAssist",
+    "shortDesc": "Next-gen game flow platform with risk modifiers and AI-powered odds explainers.",
+    "longDesc": "Hackathon build that introduces a Demons & Goblins modifier system letting users toggle risk/reward parameters for live payout multiplier adjustments. A hybrid simulation engine (Python + NumPy/Pandas) runs Monte Carlo predictions across 10k+ NBA scenarios, while AWS Bedrock generates beginner-friendly explanations of complex betting odds and player stats. FastAPI powers the backend with a React + TypeScript, Tailwind CSS frontend.",
+    "image": "/images/fanassist.png",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "FastAPI",
+      "AWS Bedrock",
+      "Tailwind CSS",
+      "Python"
+    ],
+    "liveUrl": "",
+    "githubUrl": "https://github.com/ibeeeees/FanAssist"
   }
 ]
