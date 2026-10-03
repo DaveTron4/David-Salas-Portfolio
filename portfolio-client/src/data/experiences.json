@@ -1,32 +1,53 @@
 {
   "experiences": [
     {
-      "date": "Sep 2022 – Present",
-      "company": "Freelance",
-      "position": "Web Developer",
-      "description": "Completed 5 websites for small businesses, increasing online visibility by 30%. Set up optimized SEO strategies and enabled email subscription systems to enhance client outreach. Delivered custom solutions using WordPress and Squarespace alongside traditional web technologies.",
-      "technologies": ["HTML", "CSS", "JavaScript", "WordPress", "Squarespace", "SEO"]
+      "date": "Aug 2026 – Present",
+      "company": "Cummins Enterprises",
+      "position": "IT Specialist",
+      "description": "Architected multi-tier virtualization environments using Proxmox VE with segmented VLANs and firewall policies. Automated internal workflows with n8n and Power Automate to eliminate manual bottlenecks. Configured Microsoft Entra ID and Intune policies for endpoint security and automated onboarding, while deploying Zabbix and GLPI for proactive network telemetry and asset tracking.",
+      "technologies": ["Proxmox VE", "n8n", "Power Automate", "Entra ID", "Intune", "Zabbix", "Docker", "Python"]
+    },
+    {
+      "date": "Aug 2025 – May 2026",
+      "company": "CodePath",
+      "position": "Tech Fellow",
+      "description": "Mentored and supported a cohort of 7 students through weekly 1:1 check-ins, addressing project challenges and ensuring progress with course materials. Facilitated workshops, in-class activities, and icebreakers to foster an engaging and collaborative learning environment. Represented CodePath at Georgia State University events, increasing program visibility and driving student enrollment.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Git"]
+    },
+    {
+      "date": "Aug 2025 – May 2026",
+      "company": "Georgia State University (SensEat Lab)",
+      "position": "Undergraduate Research Assistant",
+      "description": "Engineered a native Android application to generate, emit, and capture high-frequency audio chirps for bio-acoustic signal sensing. Implemented precise audio sweep logic and lossless recording pipelines using native AudioRecord APIs, achieving high signal capture reliability for downstream signal processing and analysis.",
+      "technologies": ["Android", "Java", "Kotlin", "Signal Processing", "AudioRecord API", "Python"]
+    },
+    {
+      "date": "Jan 2025 – May 2026",
+      "company": "Georgia State University",
+      "position": "STEM Tutor",
+      "description": "Elevated student assessment performance by 15% for a 20-student cohort by delivering targeted debugging protocols and conceptual frameworks in Data Structures & Algorithms. Provided technical code reviews on 50+ assignments and engineered a one-letter-grade average improvement through systematic troubleshooting guidance.",
+      "technologies": ["Python", "C++", "Java", "Data Structures", "Algorithms"]
+    },
+    {
+      "date": "Aug 2024 – May 2026",
+      "company": "SHPE",
+      "position": "Software Development Lead",
+      "description": "Built 12+ Arduino projects using C++ and Python to teach microcontroller concepts, increasing member retention by 25%. Led a team of 3 developers to launch the GSU SHPE chapter's online presence, securing $1,500 in sponsorships. Assisted 10+ members with Python assignments in Data Structures & Algorithms and System-Level Programming.",
+      "technologies": ["C++", "Python", "Arduino", "JSON-LD"]
     },
     {
       "date": "Jun 2024 – Oct 2024",
       "company": "Elys BMG",
       "position": "Support Technician Intern",
-      "description": "Monitored 50 client systems to ensure optimal functionality and prevent downtime. Managed help desk operations and created 10 error resolution guides to improve troubleshooting workflows. Fixed 50+ client system issues and provided technical support and troubleshooting system problems.",
+      "description": "Monitored 50 client systems to ensure optimal functionality and prevent downtime. Managed help desk operations and created 10 error resolution guides to improve troubleshooting workflows. Resolved 50+ system issues and provided ongoing technical support.",
       "technologies": ["TeamViewer", "Slack", "Jira", "Zendesk", "Windows Server"]
     },
     {
-      "date": "Aug 2024 – Present",
-      "company": "SHPE",
-      "position": "Software Development",
-      "description": "Built 12+ Arduino projects using C++ and Python to teach microcontroller concepts, increasing member retention by 25%. Led a team of 3 developers to launch the GSU SHPE chapter's online presence, securing $1,500 in sponsorships. Assisted 10+ members with Python assignments in Data Structures & Algorithms and System-Level Programming, achieving 90% average scores.",
-      "technologies": ["C++", "Python", "Arduino", "JSON-LD"]
-    },
-    {
-      "date": "Aug 2025 – Present",
-      "company": "CodePath",
-      "position": "Tech Fellow",
-      "description": "Mentored and supported a cohort of 7 students through weekly 1:1 check-ins, addressing project challenges and ensuring progress with course materials. Facilitated workshops, in-class activities, and icebreakers to foster an engaging and collaborative learning environment. Represented CodePath at Georgia State University events, increasing program visibility and driving student enrollment. Collaborated with CodePath staff and fellow Tech Fellows to improve the student experience through feedback loops and curriculum enhancements.",
-      "technologies": ["HTML", "CSS", "JavaScript"]
+      "date": "Sep 2022 – Present",
+      "company": "Freelance",
+      "position": "Web Developer",
+      "description": "Completed 5 websites for small businesses, increasing online visibility by 30%. Set up optimized SEO strategies and enabled email subscription systems to enhance client outreach. Delivered custom solutions using WordPress, Squarespace, and modern web frameworks.",
+      "technologies": ["HTML", "CSS", "JavaScript", "WordPress", "Squarespace", "SEO"]
     }
   ]
 }
