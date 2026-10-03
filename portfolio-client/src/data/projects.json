@@ -1,96 +1,57 @@
 [
   {
     "id": "1",
-    "title": "Coffee Canvas",
-    "shortDesc": "Full-stack coffee customization platform with real-time pricing and CRUD operations.",
-    "longDesc": "Full-stack web application allowing users to create, manage, and price custom coffee recipes. Features real-time price calculations, intelligent form validation for ingredient compatibility, and dynamic CSS theming based on the user's drink selection.",
-    "image": "/images/coffee.png",
+    "title": "Tether POS & CRM",
+    "shortDesc": "Multi-tenant SaaS retail CRM and POS platform with hardware integration.",
+    "longDesc": "Comprehensive multi-tenant SaaS platform built for independent telecom retailers using Angular, Node.js, and PostgreSQL. Features ACID-compliant financial transactions, JSONB-driven dynamic inventory management, and direct integration with physical hardware peripherals like barcode scanners and receipt printers.",
+    "image": "",
     "technologies": [
-      "React",
-      "Express.js",
-      "PostgreSQL",
+      "Angular",
       "Node.js",
-      "CSS",
-      "RESTful API"
+      "TypeScript",
+      "PostgreSQL",
+      "Docker"
     ],
     "liveUrl": "",
-    "githubUrl": "https://github.com/DaveTron4/coffee-canvas"
+    "githubUrl": ""
   },
   {
     "id": "2",
-    "title": "QR Code Generator",
-    "shortDesc": "Flask web app generating 1,000+ QR codes with improved efficiency.",
-    "longDesc": "Client-facing Flask application used to generate 1,000+ unique QR codes. Implements automated per-session file management to isolate user data and clean up backend storage, improving system efficiency by 90%.",
-    "image": "/images/qr-code.png",
+    "title": "Bedrock Control",
+    "shortDesc": "Event-driven AWS infrastructure management system for on-demand cloud hosting.",
+    "longDesc": "Engineered an automated AWS cloud management system utilizing a containerized Discord bot to trigger dynamic EC2 deployments. Implemented serverless AWS Lambda functions to monitor network traffic, automatically back up data to S3, and terminate inactive instances, resulting in an 80% reduction in cloud costs. Provisioned via Terraform with secure IAM Roles Anywhere.",
+    "image": "",
     "technologies": [
+      "AWS (EC2, Lambda, S3)",
+      "Terraform",
+      "Docker",
       "Python",
-      "Flask",
-      "HTML",
-      "CSS",
-      "qrcode",
-      "Pillow",
-      "Render"
+      "Discord API"
     ],
-    "liveUrl": "https://qr-code-yuwx.onrender.com/",
-    "githubUrl": "https://github.com/DaveTron4/QR_Code"
+    "liveUrl": "",
+    "githubUrl": ""
   },
   {
     "id": "3",
-    "title": "The Spotter Zone",
-    "shortDesc": "Responsive fitness SPA with authentication and real-time data.",
-    "longDesc": "Responsive fitness application featuring secure user authentication and real-time database integration via Supabase and PostgreSQL. Implemented mobile-first design with Bootstrap and automated CI/CD pipelines via Netlify to streamline deployments.",
-    "image": "/images/spotter-zone.png",
+    "title": "CheckInApp",
+    "shortDesc": "React Native mobile application for real-time tutoring center management.",
+    "longDesc": "Developed a React Native mobile application for tutoring center check-ins featuring offline-first capabilities and secure dynamic QR code validation. Engineered real-time state synchronization across clients via WebSockets and deployed the scalable containerized backend to AWS EC2.",
+    "image": "",
     "technologies": [
-      "React",
-      "PostgreSQL",
-      "Supabase",
-      "Bootstrap",
-      "Netlify",
-      "Git"
+      "React Native",
+      "WebSockets",
+      "AWS EC2",
+      "Docker",
+      "Node.js"
     ],
-    "liveUrl": "https://thespotterzone.netlify.app/",
-    "githubUrl": "https://github.com/DaveTron4/The-Spotter-Zone"
+    "liveUrl": "",
+    "githubUrl": ""
   },
   {
     "id": "4",
-    "title": "Employee Management System",
-    "shortDesc": "Enterprise-ready employee CRUD with Java Spring Boot API and React frontend.",
-    "longDesc": "Led a 4-person team to build an enterprise-ready management system using a React frontend and Java Spring Boot REST API. Designed a scalable MySQL database schema, applied clean architecture principles, and maintained rigorous Git workflows for collaborative development.",
-    "image": "/images/ems.png",
-    "technologies": [
-      "React",
-      "Java",
-      "Spring Boot",
-      "MySQL",
-      "Bootstrap",
-      "Vite",
-      "DBeaver",
-      "Git"
-    ],
-    "liveUrl": "",
-    "githubUrl": "https://github.com/DaveTron4/employee-management-system"
-  },
-  {
-    "id": "5",
-    "title": "Minecraft Server Guide",
-    "shortDesc": "Complete guide to deploying a modded Minecraft Forge server on Ubuntu.",
-    "longDesc": "Comprehensive technical documentation for deploying and optimizing a headless Ubuntu Server for modded multiplayer gaming. Covers network configuration (Netplan, NAT traversal), JVM performance tuning, secure remote management (SCP), and system backup best practices.",
-    "image": "/images/minecraft.png",
-    "technologies": [
-      "Ubuntu Server",
-      "Bash",
-      "SCP",
-      "Netplan",
-      "Java"
-    ],
-    "liveUrl": "https://davetron4.github.io/Minecraft-Server-Guide/",
-    "githubUrl": "https://github.com/DaveTron4/Minecraft-Server-Guide"
-  },
-  {
-    "id": "6",
     "title": "Room To Grow",
     "shortDesc": "AI tutoring platform using multi-model routing, CV, and streaming responses.",
-    "longDesc": "AI tutoring platform leveraging OpenRouter to dynamically orchestrate multiple LLMs (Gemini, Claude). Features computer vision for diagram analysis, real-time streaming responses, and automated parsing of chat context into interactive flashcards and quizzes.",
+    "longDesc": "AI tutoring platform leveraging OpenRouter to dynamically orchestrate multiple LLMs. Features computer vision for diagram analysis, real-time streaming responses, and automated parsing of chat context into interactive flashcards and quizzes.",
     "image": "/images/room-to-grow.png",
     "technologies": [
       "React 19",
@@ -104,36 +65,19 @@
     "githubUrl": "https://github.com/DaveTron4/room-to-grow"
   },
   {
-    "id": "7",
-    "title": "TaskMate AI",
-    "shortDesc": "AI-powered task planner with GitHub OAuth and drag-and-drop prioritization.",
-    "longDesc": "AI productivity tool that converts natural language into structured tasks via OpenAI's API. Features GitHub OAuth, drag-and-drop UI, and optimized PostgreSQL indexing that reduced query latency by 40%.",
-    "image": "/images/taskmate-ai.png",
+    "id": "5",
+    "title": "AR Stroke Rehabilitation",
+    "shortDesc": "Augmented reality stroke recovery application built for Meta Quest 3.",
+    "longDesc": "Developed an augmented reality medical rehabilitation tool for Meta Quest 3 using Unity and C#. Engineered a high-performance backend using Rust to process spatial data and track user recovery metrics in real-time.",
+    "image": "",
     "technologies": [
-      "React",
-      "Express.js",
-      "PostgreSQL",
-      "OpenAI API",
-      "GitHub OAuth"
-    ],
-    "liveUrl": "https://taskmate-ai-ef8u.onrender.com/",
-    "githubUrl": "https://github.com/DaveTron4/taskmate-ai"
-  },
-  {
-    "id": "8",
-    "title": "FanAssist",
-    "shortDesc": "Next-gen game flow platform with risk modifiers and AI-powered odds explainers.",
-    "longDesc": "Sports analytics platform utilizing a Python-based Monte Carlo simulation engine to predict NBA scenarios. Integrates AWS Bedrock to generate beginner-friendly explanations of complex odds and features a customizable risk/reward modifier system for live adjustments.",
-    "image": "/images/fanassist.png",
-    "technologies": [
-      "React",
-      "TypeScript",
-      "FastAPI",
-      "AWS Bedrock",
-      "Tailwind CSS",
-      "Python"
+      "Unity",
+      "C#",
+      "Rust",
+      "Meta Quest 3",
+      "AR/VR"
     ],
     "liveUrl": "",
-    "githubUrl": "https://github.com/ibeeeees/FanAssist"
+    "githubUrl": ""
   }
 ]
