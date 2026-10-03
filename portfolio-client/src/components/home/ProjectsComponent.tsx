@@ -273,7 +273,7 @@ export default function ProjectSection() {
                     {/* Technologies */}
                     <div className="mb-8">
                       <h4 className="text-lg font-semibold mb-4 text-accent2">Technologies Used</h4>
-                      <div className="flex flex-wrap gap-3">
+                      <div className="flex overflow-x-auto gap-3">
                         {projects[activeIndex].technologies.map((tech) => (
                           <span
                             key={tech}
