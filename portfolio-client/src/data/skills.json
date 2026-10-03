@@ -1,46 +1,76 @@
 {
   "skills": {
     "Frontend": [
-      "HTML",
-      "CSS",
+      "HTML5",
+      "CSS3",
       "JavaScript",
-      "React",
-      "TailwindCSS",
       "TypeScript",
+      "React / React 19",
+      "Next.js",
+      "TailwindCSS",
       "Bootstrap",
-      "Three.js"
+      "Three.js",
+      "Framer Motion",
+      "Angular"
     ],
     "Backend": [
       "Python",
-      "Flask",
       "Node.js",
-      "Express",
+      "Express.js",
+      "FastAPI",
+      "Flask",
+      "Java (Spring Boot)",
+      "Rust",
+      "C / C++",
       "REST APIs",
-      "Java",
-      "C",
-      "C++"
+      "WebSockets"
+    ],
+    "Cloud & Infrastructure": [
+      "AWS (EC2, Lambda, S3)",
+      "Docker",
+      "Terraform",
+      "Proxmox VE",
+      "Linux (Ubuntu, Arch)",
+      "Tailscale",
+      "Entra ID / Intune",
+      "Zabbix / GLPI"
     ],
     "Databases": [
-      "SQL",
-      "MySQL",
       "PostgreSQL",
-      "Supabase",
-      "DBeaver",
+      "MySQL",
       "MongoDB",
+      "Supabase",
+      "Databricks",
       "SQLite",
       "Mongoose",
-      "phpMyAdmin"
+      "DBeaver"
     ],
-    "Tools": [
-      "Git/GitHub",
-      "Netlify",
+    "Mobile & AR/VR": [
+      "React Native",
+      "Native Android",
+      "Unity (C#)",
+      "Meta Quest 3 (AR/VR)",
+      "Signal Processing"
+    ],
+    "AI & Automation": [
+      "n8n",
+      "Power Automate",
+      "OpenAI API",
+      "AWS Bedrock",
+      "OpenRouter API",
+      "Computer Vision",
+      "NumPy / Pandas"
+    ],
+    "Tools & Workflows": [
+      "Git / GitHub",
       "Postman",
       "CI/CD",
-      "Docker",
-      "Power BI",
+      "Vercel",
+      "Netlify",
+      "Render",
       "Figma",
-      "Agile/Scrum",
-      "Vercel"
+      "Power BI",
+      "Agile / Scrum"
     ]
   }
 }
