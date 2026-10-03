@@ -273,13 +273,15 @@ export default function ProjectSection() {
                     {/* Technologies */}
                     <div className="mb-8">
                       <h4 className="text-lg font-semibold mb-4 text-accent2">Technologies Used</h4>
-                      <div className="flex overflow-x-auto gap-3">
+                      <div className="flex overflow-x-auto gap-3 py-2">
                         {projects[activeIndex].technologies.map((tech) => (
                           <span
                             key={tech}
-                            className="glass px-4 py-2 rounded-full border-primary/30 hover:bg-primary/10 transition-colors duration-200 cursor-pointer"
+                            // Added: flex-none, w-32, h-10, flex, items-center, justify-center
+                            className="glass flex-none w-32 h-10 flex items-center justify-center rounded-full border border-primary/30 hover:bg-primary/10 transition-colors duration-200 cursor-pointer px-4"
                           >
-                            {tech}
+                            {/* Added inner span for safe text truncation */}
+                            <span className="truncate">{tech}</span>
                           </span>
                         ))}
                       </div>
